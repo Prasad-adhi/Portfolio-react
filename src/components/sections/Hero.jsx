@@ -19,9 +19,48 @@ const HeroContainer = styled.div`
     clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
 `;
 
-const HeroInnerContainer = styled.div``;
-const HeroLeftContainer = styled.div``;
-const HeroRightContainer = styled.div``;
+const HeroInnerContainer = styled.div`
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+
+    @media (max-width: 960px) {
+        flex-direction: column;
+    }
+`;
+const HeroLeftContainer = styled.div`
+    width: 100%;
+    order: 1;
+    background: red;
+    @media (max-width: 960px){
+        order: 2;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+`;
+const HeroRightContainer = styled.div`
+    width: 100%;
+    order: 2;
+    background: blue;
+    @media (max-width: 960px){
+        order: 1;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-contents: center;
+        margin-bottom: 80px;
+    }
+
+    @media (max-width: 640px) {
+        margin-bottom: 30px;
+    }
+`;
 
 const Hero = () => {
   return (
