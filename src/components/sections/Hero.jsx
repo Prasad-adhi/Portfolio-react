@@ -214,7 +214,7 @@ const HeroBg = styled.div`
 
 const Hero = () => {
   return (
-    <div id="about">
+    <div id="About">
         <HeroContainer>
             <HeroBg>
                 <StarCanvas />
@@ -245,7 +245,9 @@ const Hero = () => {
                             <SubTitle>{Bio.description}</SubTitle>
                         </motion.div>
                         
-                        <ResumeButton>Check Resume</ResumeButton>
+                        <ResumeButton href={Bio.resume} target="_blank">
+                          Check Resume
+                        </ResumeButton>
                     </HeroLeftContainer>
                     <HeroRightContainer>
                         <motion.div {...headContentAnimation}>

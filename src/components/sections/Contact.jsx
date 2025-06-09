@@ -22,9 +22,9 @@ const Container = styled.div`
 `;
 
 const ContactWrapper = styled(motion.div)`
-  flex: 0 0 45%;
+  flex: 0 0 30%;
   background-color: #1a1a1a;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -124,19 +124,26 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs
-      .send(
-        "service_82wt0os",
-        "template_mqgvxp5",
-        {
-          from_name: form.name,
-          to_name: "JavaScript Mastery",
-          from_email: form.email,
-          to_email: "prasad.adhi08@gmail.com",
-          message: form.message,
-        },
-        "o-mrPYF8vtv7lEpAw"
-      )
+    // emailjs
+    //   .send(
+    //     "service_82wt0os",
+    //     "template_mqgvxp5",
+    //     {
+    //       from_name: form.name,
+    //       to_name: "JavaScript Mastery",
+    //       from_email: form.email,
+    //       to_email: "prasad.adhi08@gmail.com",
+    //       message: form.message,
+    //     },
+    //     "o-mrPYF8vtv7lEpAw"
+    //   )
+      emailjs.send("service_82wt0os","template_mqgvxp5",{
+      name: form.name,
+      message: form.message,
+      email: form.email,
+      },
+      "o-mrPYF8vtv7lEpAw"
+    )
       .then(
         () => {
           setLoading(false);
