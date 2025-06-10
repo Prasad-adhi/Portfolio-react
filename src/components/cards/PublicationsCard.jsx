@@ -95,21 +95,21 @@ const Button = styled.a`
   text-align: center;
 `;
 
-const ProjectCard = ({ project }) => {
+const PublicationCard = ({ publication }) => {
   return (
     <Card>
-      <Image src={project.image} />
+      <Image src={publication.image} />
       <Tags></Tags>
       <Details>
-        <Title>{project.title}</Title>
-        {/* <Date>{project.date}</Date> */}
-        <Description>{project.description}</Description>
+        <Title>{publication.title}</Title>
+        <Date>{publication.date}</Date>
+        <Description>{publication.description}</Description>
       </Details>
-      <Button href={project.github} target="_blank">
-        View Code
+      <Button href={publication.link} target="_blank">
+        View Publication
       </Button>
     </Card>
   );
 };
 
-export default ProjectCard;
+export default PublicationCard;

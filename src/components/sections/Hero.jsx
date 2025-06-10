@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import { Bio } from "../../data/constants";
 import Typewriter from "typewriter-effect";
-import HeroImg from "../../images/20230928,565.jpg"
+//import HeroImg from "../../../public/images/PrasadAdhiyaman.png"
 import HeroBgAnimation from "../HeroBgAnimation";
 import {Tilt} from "react-tilt";
 import {motion} from "framer-motion";
@@ -88,7 +88,7 @@ const Title = styled.div`
 
 const TextLoop = styled.div`
   font-weight: 600;
-  font-size: 32px;
+  font-size: 24px;
   display: flex;
   gap: 12px;
   color: ${({ theme }) => theme.text_primary};
@@ -251,7 +251,7 @@ const Hero = () => {
                     </HeroLeftContainer>
                     <HeroRightContainer>
                         <motion.div {...headContentAnimation}>
-                            <Tilt><Img src = {HeroImg} alt="Prasad Adhiyaman" /></Tilt>
+                            <Tilt><Img src = "/images/20230928,565.jpg" alt="Prasad Adhiyaman" /></Tilt>
                         </motion.div>
                     </HeroRightContainer>
                 </HeroInnerContainer>

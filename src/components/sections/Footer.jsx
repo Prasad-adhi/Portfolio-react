@@ -5,8 +5,9 @@ import {
   FacebookRounded,
   Instagram,
   LinkedIn,
-  Twitter,
+  Twitter
 } from "@mui/icons-material";
+import SchoolIcon from '@mui/icons-material/School';
 
 const FooterContainer = styled.div`
   width: 100%;
@@ -84,6 +85,7 @@ const Footer = () => {
           <NavLink href="#Skills">Skills</NavLink>
           <NavLink href="#Experience">Experience</NavLink>
           <NavLink href="#Projects">Projects</NavLink>
+          <NavLink href="#Publications">Publications</NavLink>
           <NavLink href="#Education">Education</NavLink>
         </Nav>
         <SocialMediaIcons>
@@ -92,6 +94,9 @@ const Footer = () => {
           </SocialMediaIcon>
           <SocialMediaIcon href={Bio.insta} target="display">
             <Instagram />
+          </SocialMediaIcon>
+          <SocialMediaIcon href={Bio.scholar} target="display">
+            <SchoolIcon />
           </SocialMediaIcon>
         </SocialMediaIcons>
       </FooterWrapper>

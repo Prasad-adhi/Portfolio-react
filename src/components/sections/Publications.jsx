@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { projects } from "../../data/constants";
-import ProjectCard from "../cards/ProjectCard";
+import { Publications } from "../../data/constants";
+import PublicationCard from "../cards/PublicationsCard";
 
 const Container = styled.div`
   display: flex;
@@ -90,19 +90,18 @@ const CardContainer = styled.div`
   flex-wrap: wrap;
 `;
 
-const Projects = () => {
+const Publication = () => {
   const [toggle, setToggle] = useState("all");
   return (
-    <Container id="Projects">
+    <Container id="Publications">
       <Wrapper>
-        <Title>Projects</Title>
+        <Title>Publications</Title>
         <Desc
           style={{
             marginBottom: "40px",
           }}
         >
-          I have worked on a wide range of projects. From web apps to android
-          apps. Here are some of my projects.
+          The research works and publications from my academic career. 
         </Desc>
 
         <ToggleButtonGroup>
@@ -114,34 +113,27 @@ const Projects = () => {
           </ToggleButton>
           <Divider />
           <ToggleButton
-            active={toggle === "web app"}
-            onClick={() => setToggle("web app")}
+            active={toggle === "Journal"}
+            onClick={() => setToggle("Journal")}
           >
-            WEB APP"S
+            JOURNAL
           </ToggleButton>
           <Divider />
           <ToggleButton
-            active={toggle === "android app"}
-            onClick={() => setToggle("android app")}
+            active={toggle === "Conference"}
+            onClick={() => setToggle("Conference")}
           >
-            ANDROID APP'S
-          </ToggleButton>
-          <Divider />
-          <ToggleButton
-            active={toggle === "machine learning"}
-            onClick={() => setToggle("machine learning")}
-          >
-            MACHINE LEARNING
+            CONFERENCE
           </ToggleButton>
         </ToggleButtonGroup>
 
         <CardContainer>
           {toggle === "all" &&
-            projects.map((project) => <ProjectCard project={project} />)}
-          {projects
+            Publications .map((publication) => <PublicationCard publication={publication} />)}
+          {Publications 
             .filter((item) => item.category === toggle)
-            .map((project) => (
-              <ProjectCard project={project} />
+            .map((publication) => (
+              <PublicationCard publication={publication} />
             ))}
         </CardContainer>
       </Wrapper>
@@ -149,4 +141,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Publication;
