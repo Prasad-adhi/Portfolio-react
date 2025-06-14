@@ -318,31 +318,40 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Kiit.jpeg?alt=media&token=3839d520-c59d-4341-ad8f-0980c98de4dd",
-    school: "Kalinga Institute of Industrial Technology, Bhubaneswar",
-    date: "Oct 2021 - Sep 2025",
-    grade: "8.41 CGPA",
-    desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Kalinga Institute of Industrial Technology, Bhubaneswar. I have completed 4 semesters and have a CGPA of 8.71. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the Google Developers Student Club (GDSC) at KIIT, where I am learning and working on exciting projects with a team of talented developers.",
-    degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
+    img: "https://upload.wikimedia.org/wikipedia/commons/3/35/University_of_Massachusetts_Amherst_seal.png",
+    school: "University of Massachusetts, Amherst",
+    date: "Sept 2023 - May 2025",
+    grade: "3.94 CGPA",
+    desc: "Finished my Master's degree in Computer Science, I pursued courses such as Theory and Practice of Software Engineering, Advanced Algorithms, Introduction to Neural Networks, Computer Vision, Advanced NLP, Intelligent Visual Computing, Data Science Fundamentals.",
+    degree: "Master's of Science in Computer Science",
   },
   {
     id: 1,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
-    school: "Methodist School, Dankuni",
-    date: "Apr 2019 - Apr 2025",
-    grade: "88.2%",
-    desc: "I completed my class 12 high school education at Methodist School, Dankuni, where I studied Science with Computer Science.",
-    degree: "ISC(XII), Science with Computer",
+    img: "https://education.indianexpress.com/storage/images/vit-vellorelogo_1693457766.jpg",
+    school: "Vellore Institute of Technology, Chennai",
+    date: "Jul 2019 - Aug 2023",
+    grade: "3.71 CGPA",
+    desc: "Pursued riveting courses such as Machine Learning Essentials, Deep Learning: Principles and Practices, Machine Intelligence for Medical Image Analysis, Video Analytics, Computer Vision in Healthcare, Software Engineering, Data Structures and Algorithms, Database management system design.",
+    degree: "Bachelor of Technology - Computer Science and Engineering with Specialization in AI and ML",
   },
   {
     id: 2,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
-    school: "Methodist School, Dankuni",
-    date: "Apr 2017 - Apr 2019",
-    grade: "92.3%",
-    desc: "I completed my class 10 education at Methodist School, Dankuni, where I studied Science with Computer Application.",
-    degree: "ICSC(X), Science with Computer",
+    img: "http://upload.wikimedia.org/wikipedia/en/9/90/NPSK_Logo.png",
+    school: "National Public School, Chennai",
+    date: "Jun 2017 - Apr 2019",
+    grade: "91.4%",
+    desc: "I completed my class 12 education at the National Public School, where I studied Science with Computer Science",
+    degree: "CBSE(XII), Science with Computer",
   },
+  {
+    id: 3,
+    img: "./images/Hindu School Logo_1.jpg",
+    school: "The Hindu Senior Secondary School, Chennai",
+    date: "Jun 2007 - Apr 2017",
+    grade: "3.76 CGPA",
+    desc: "I completed my class 10 education at The Hindu Senior Secondary School, where I studied Science with Computer Science",
+    degree: "CBSE(X), Science with Computer",
+  }
 ];
 
 export const projects = [
@@ -483,7 +492,7 @@ export const projects = [
     description:
       "A trained Detection-Transformer to detect animals from camera trap images.",
     image:
-      "https://camo.githubusercontent.com/84ac6ab6f378348ef28d8184062b7e9e3511a1252ae3966eaa49e8e998f732a7/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f746f646f2d6170702d63386331392e61707073706f742e636f6d2f6f2f53637265656e73686f74253230283938292e706e673f616c743d6d6564696126746f6b656e3d33643335646366322d626666322d343730382d393031632d343232383866383332386633",
+      "./images/ObjectDetection.png",
     tags: ["React Js", "Local Storage", "AWS Auth", "Node JS"],
     category: "machine learning",
     github: "https://github.com/Prasad-adhi/VisionTransformers-for-Camera-Trap-Images",
@@ -494,40 +503,53 @@ export const projects = [
     title: "Monet Art Generation using CycleGAN",
     date: "Jun 2021",
     description:
-      "A simple react app that shows the characters of the famous TV series Breaking Bad. It uses the Breaking Bad API to fetch the data. It also has a search bar to search for a particular character.",
+      "A custom CycleGAN architecture to generate Monet art from natural images.",
     image:
-      "https://camo.githubusercontent.com/937774368308a82419f53dd6eeb4a8675780e119636488b4e3cfe5d34859a72a/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f746f646f2d6170702d63386331392e61707073706f742e636f6d2f6f2f53637265656e73686f7425323028313534292e706e673f616c743d6d6564696126746f6b656e3d65613439383630632d303435362d343333342d616435372d336239346663303333363263",
+      "./images/MonetArt.png",
     tags: ["React Js", "API", "Axios", "Node JS"],
-    category: "web app",
-    github: "https://github.com/rishavchanda/Breaking-Bad",
+    category: "machine learning",
+    github: "https://github.com/Prasad-adhi/CycleGan",
     webapp: "https://breaking-bad-webapp.netlify.app",
   },
   {
     id: 7,
-    title: "Quiz App",
+    title: "Credit card fraud detection",
     date: "Dec 2020 - Jan 2021",
     description:
-      "A android quiz app made with Java and Firebase. It has a login page where users can log in with their Google account. It has a sidebar where users can see all the quiz categories and can create a new quiz. It has a leaderboard where users can see the top 10 scorers. It has a search bar where users can search for a particular quiz.",
+      "A Java application based on Apache Flink to detect credit card fraud.",
     image:
-      "https://github-production-user-asset-6210df.s3.amazonaws.com/64485885/239726262-c1b061d1-d9d0-42ef-9f1c-0412d14bc4f6.gif",
+      "./images/CreditCardFraud.png",
     tags: ["Java", "Android Studio", "Firebase", "Google Auth"],
-    category: "android app",
-    github: "https://github.com/rishavchanda/Quiz-Earn",
+    category: "standalone",
+    github: "https://github.com/Prasad-adhi/Credit-card-fraud-detection-flink",
     webapp: "https://github.com/rishavchanda/Quiz-Earn",
   },
   {
     id: 8,
-    title: "Face Recognition",
+    title: "Simple Virtual Assistant",
     date: "Jan 2021",
     description:
-      "A Face recognition python app made with OpenCV. It uses face_recognition library to detect faces. It uses the webcam to detect faces. It also has a search bar to search for a particular face.",
+      "A python application that uses voice recognition to answer simple queries.",
     image:
-      "https://dontrepeatyourself.org/media/face-recognition-with-python-dlib-and-deep-learning_cezKZBj.png",
+      "./images/VoiceAssistant.png",
     tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
-    category: "machine learning",
-    github: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
+    category: "standalone",
+    github: "https://github.com/Prasad-adhi/Simple_Virtual_Assistant",
     webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
   },
+  {
+    id: 10,
+    title: "Book Store",
+    date: "Jan 2021",
+    description:
+      "A C++ application that works as a Book store. ",
+    image:
+      "./images/BookStore.png",
+    tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
+    category: "standalone",
+    github: "https://github.com/Prasad-adhi/Book-store-using-turbo-cplusplus",
+    webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
+  }
 ];
 
 export const Publications = [
